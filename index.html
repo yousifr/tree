@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+
+    <title>Merry Christmas</title>
+  </head>
+  <body>
+    <audio id="myAudio">
+      <!-- <source src="horse.ogg" type="audio/ogg" /> -->
+      <source
+        src="./src/assets/sound.mp3"
+        type="audio/mpeg
+			"
+      />
+      Your browser does not support the audio element.
+    </audio>
+
+    <h1>Merry Christmas</h1>
+
+    <img src="./src/assets/img" class="backgroundIMG" />
+    <img src="./src/assets/tree" class="tree" />
+    <div class="buttons">
+      <button onclick="pauseAudio()" class="pause">
+        <i class="bi bi-pause-fill"></i>
+      </button>
+      <button onclick="playAudio()" class="play">
+        <i class="bi bi-play-fill"></i>
+      </button>
+    </div>
+
+    <h2>
+      Merry Christmas to you and your family! I wish you a great time at home
+      filled with laughter and joy!
+    </h2>
+
+    <h6>
+      Developed By
+      <a href="https://yousifismail.com/" target="_blank">Yousif Ismail</a>
+    </h6>
+
+    <script>
+      var audio = document.getElementById("myAudio");
+
+      function pauseAudio() {
+        audio.pause();
+      }
+
+      function playAudio() {
+        audio.play();
+      }
+    </script>
+  </body>
+</html>
